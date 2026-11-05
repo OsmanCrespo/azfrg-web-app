@@ -3,7 +3,7 @@ title: "O que se passa no mar dos Açores?"
 page-layout: full
 toc: false
 ---
-![](images/afg_logo.png){width=120 fig-align="right"}
+![](images/afg_logo2.png){width=120 fig-align="right"}
 
 ::: {.grid}
 ::: {.g-col-4 .stat-box}
@@ -33,7 +33,11 @@ plot_ly(d, x = ~year, y = ~tonnes, color = ~species, type = "scatter",
 
 ## Sobre a equipa {#sobre}
 
-Apresentação da nossa equipa de investigação, objetivos, contactos, política de dados, licença e como citar este portal. *(Por escrever.)*
+A equipa de investigação das pescas nos Açores é um grupo baseado na Universidade dos Açores, que trabalha em colaboração com o Instituto OKEANOS...
+Liderada pelo Prof. Doutor Régis Santos, a equipa inclui investigadores, estudantes e técnicos que se dedicam ao estudo das pescas e da biologia marinha voltada para os recursos pesqueiros na região.
+
+### Objetivos
+O objetivo é estudar as pescas nos Açores, incluindo a biologia das espécies, os impactos da pesca e o estado dos estoques dos principais recursos marinhos explorados na região.
 
 ### Notícias
 
