@@ -1,5 +1,5 @@
 ---
-title: "Species"
+title: "Espécies"
 listing:
   contents: "*.qmd"
   type: grid
@@ -8,4 +8,4 @@ listing:
   grid-columns: 3
 ---
 
-Browse the species we study. Each page has biology, fishery data and related publications.
+Explore as espécies que estudamos. Cada página inclui biologia, dados das pescas e publicações relacionadas.

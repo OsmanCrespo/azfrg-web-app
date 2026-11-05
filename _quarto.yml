@@ -2,23 +2,25 @@ project:
   type: website
   output-dir: _site
 
+lang: pt
+
 website:
-  title: "Fisheries Research Portal"
+  title: "Portal de Investigação Pesqueira"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Início
       - href: map.qmd
-        text: Map Explorer
+        text: Explorador de Mapas
       - href: species/index.qmd
-        text: Species
+        text: Espécies
       - href: fisheries.qmd
-        text: Fisheries Data
+        text: Dados das Pescas
       - href: publications.qmd
-        text: Publications
+        text: Publicações
       - href: about.qmd
-        text: About
-  page-footer: "Data shown are illustrative placeholders until replaced with published research data."
+        text: Sobre
+  page-footer: "Os dados apresentados são exemplos provisórios, a substituir pelos dados de investigação publicados."
 
 format:
   html:

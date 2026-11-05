@@ -1,5 +1,5 @@
 ---
-title: "What's happening in our waters?"
+title: "O que se passa nas nossas águas?"
 page-layout: full
 toc: false
 ---
@@ -12,30 +12,30 @@ leaflet(sites, height = 350) |>
   addCircleMarkers(~lon, ~lat, radius = 6, color = "#0b4f6c", label = ~site)
 ```
 
-[Explore the map →](map.qmd){.btn .btn-primary}
+[Explorar o mapa →](map.qmd){.btn .btn-primary}
 
 ::: {.grid}
 ::: {.g-col-4 .stat-box}
-<span class="num">2</span><br>species profiled
+<span class="num">2</span><br>espécies descritas
 :::
 ::: {.g-col-4 .stat-box}
-<span class="num">12</span><br>years of landings data
+<span class="num">12</span><br>anos de dados de desembarques
 :::
 ::: {.g-col-4 .stat-box}
-<span class="num">3</span><br>publications
+<span class="num">3</span><br>publicações
 :::
 :::
 
-## Featured finding
+## Resultado em destaque
 
 ```{r}
 library(plotly)
 d <- read.csv("data/landings.csv")
 plot_ly(d, x = ~year, y = ~tonnes, color = ~species, type = "scatter",
         mode = "lines+markers") |>
-  layout(xaxis = list(title = "Year"), yaxis = list(title = "Landings (tonnes)"))
+  layout(xaxis = list(title = "Ano"), yaxis = list(title = "Desembarques (toneladas)"))
 ```
 
 ::: {.plain-words}
-**In plain words:** this chart shows how much of each species was landed per year. *(Placeholder text and data.)*
+**Em palavras simples:** este gráfico mostra a quantidade de cada espécie desembarcada por ano. *(Texto e dados provisórios.)*
 :::

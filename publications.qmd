@@ -1,8 +1,8 @@
 ---
-title: "Publications"
+title: "Publicações"
 ---
 
-Only published articles and reports are available for download.
+Apenas artigos e relatórios já publicados estão disponíveis para descarregar.
 
 ```{r}
 library(reactable)
@@ -10,11 +10,17 @@ p <- read.csv("data/publications.csv")
 reactable(
   p, searchable = TRUE, filterable = TRUE,
   columns = list(
-    doi = colDef(cell = function(v) htmltools::tags$a(href = paste0("https://doi.org/", v), target = "_blank", v)),
-    pdf = colDef(name = "Download", filterable = FALSE,
+    year = colDef(name = "Ano"),
+    title = colDef(name = "Título"),
+    authors = colDef(name = "Autores"),
+    topic = colDef(name = "Tema"),
+    doi = colDef(name = "DOI", cell = function(v) htmltools::tags$a(href = paste0("https://doi.org/", v), target = "_blank", v)),
+    pdf = colDef(name = "Descarregar", filterable = FALSE,
                  cell = function(v) if (nzchar(v)) htmltools::tags$a(href = v, "PDF") else "")
-  )
+  ),
+  language = reactableLang(searchPlaceholder = "Pesquisar", noData = "Sem resultados",
+    pageNext = "Seguinte", pagePrevious = "Anterior", pageInfo = "{rowStart}–{rowEnd} de {rows} linhas")
 )
 ```
 
-Put PDFs in `files/` and reference them as `files/name.pdf` in `data/publications.csv`.
+Coloque os PDF em `files/` e referencie-os como `files/nome.pdf` em `data/publications.csv`.

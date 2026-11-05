@@ -1,16 +1,16 @@
 ---
-title: "Blackspot seabream"
+title: "Goraz"
 subtitle: "Pagellus bogaraveo"
-description: "Placeholder profile — replace with real data."
+description: "Ficha provisória — substituir por dados reais."
 ---
 
 ::: {.plain-words}
-**In plain words:** a reddish deep-water fish, a key target of the local hook-and-line fishery. *(Placeholder text.)*
+**Em palavras simples:** um peixe avermelhado de águas profundas, alvo importante da pesca local com linha e anzol. *(Texto provisório.)*
 :::
 
 ::: {.panel-tabset}
 
-## Biology
+## Biologia
 
 ```{r}
 library(plotly)
@@ -18,20 +18,20 @@ set.seed(1)
 L <- runif(150, 20, 55)
 W <- 0.012 * L^3.05 * exp(rnorm(150, 0, 0.08))
 plot_ly(x = L, y = W, type = "scatter", mode = "markers") |>
-  layout(xaxis = list(title = "Length (cm)"), yaxis = list(title = "Weight (g)"),
-         title = "Length–weight relationship (simulated)")
+  layout(xaxis = list(title = "Comprimento (cm)"), yaxis = list(title = "Peso (g)"),
+         title = "Relação comprimento–peso (simulada)")
 ```
 
-## Fishery
+## Pescaria
 
 ```{r}
-d <- subset(read.csv("../data/landings.csv"), species == "Blackspot seabream")
+d <- subset(read.csv("../data/landings.csv"), species == "Goraz")
 plot_ly(d, x = ~year, y = ~tonnes, type = "bar") |>
-  layout(xaxis = list(title = "Year"), yaxis = list(title = "Landings (tonnes)"))
+  layout(xaxis = list(title = "Ano"), yaxis = list(title = "Desembarques (toneladas)"))
 ```
 
-## Publications
+## Publicações
 
-See the [Publications](../publications.qmd) page.
+Consulte a página de [Publicações](../publications.qmd).
 
 :::

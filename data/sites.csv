@@ -1,5 +1,5 @@
 site,lat,lon,main_species,catch_t
-Site A,38.52,-28.62,Blackspot seabream,12
-Site B,38.40,-27.10,Chub mackerel,25
-Site C,37.75,-25.60,Blackspot seabream,8
-Site D,39.05,-31.15,Chub mackerel,15
+Local A,38.52,-28.62,Goraz,12
+Local B,38.40,-27.10,Cavala,25
+Local C,37.75,-25.60,Goraz,8
+Local D,39.05,-31.15,Cavala,15

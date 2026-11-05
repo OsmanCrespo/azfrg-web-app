@@ -1,21 +1,21 @@
-# Fisheries Research Portal
+# Portal de Investigação Pesqueira
 
-Quarto website (R) published on GitHub Pages: map explorer, species profiles, fisheries data and publications.
+Site Quarto (R) publicado no GitHub Pages: explorador de mapas, fichas de espécies, dados das pescas e publicações.
 
-## Develop locally (Positron)
+## Desenvolver localmente (Positron)
 
 ```r
 install.packages(c("plotly", "leaflet", "reactable", "htmltools", "rmarkdown"))
 ```
 
-Then run `quarto preview` in the terminal.
+Depois execute `quarto preview` no terminal.
 
-## Publish
+## Publicar
 
-Push to `main`; the GitHub Action renders and deploys. One-time setup: **Settings → Pages → Source: GitHub Actions**.
+Faça push para `main`; a GitHub Action gera e publica o site (Settings → Pages → Source: GitHub Actions).
 
-## Structure
+## Estrutura
 
-- `*.qmd`: pages; `species/`: one `.qmd` per species (auto-listed)
-- `data/`: CSVs (currently placeholders)
-- `files/`: published PDFs
+- `*.qmd`: páginas; `species/`: um `.qmd` por espécie (listado automaticamente)
+- `data/`: CSV (atualmente provisórios)
+- `files/`: PDF publicados

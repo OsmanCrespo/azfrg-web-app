@@ -1,5 +1,5 @@
 ---
-title: "Fisheries Data"
+title: "Dados das Pescas"
 ---
 
 ```{r}
@@ -7,16 +7,24 @@ library(plotly)
 library(reactable)
 d <- read.csv("data/landings.csv")
 plot_ly(d, x = ~year, y = ~tonnes, color = ~species, type = "bar") |>
-  layout(barmode = "stack", xaxis = list(title = "Year"),
-         yaxis = list(title = "Landings (tonnes)"))
+  layout(barmode = "stack", xaxis = list(title = "Ano"),
+         yaxis = list(title = "Desembarques (toneladas)"))
 ```
 
 ::: {.plain-words}
-**How to read this:** each coloured block is one species; the full bar height is total landings for that year.
+**Como ler este gráfico:** cada bloco colorido é uma espécie; a altura total da barra é o total de desembarques nesse ano.
 :::
 
-## Table
+## Tabela
 
 ```{r}
-reactable(d, searchable = TRUE, filterable = TRUE, defaultPageSize = 10)
+reactable(d, searchable = TRUE, filterable = TRUE, defaultPageSize = 10,
+  columns = list(
+    year = colDef(name = "Ano"),
+    species = colDef(name = "Espécie"),
+    tonnes = colDef(name = "Toneladas"),
+    gear = colDef(name = "Arte de pesca")
+  ),
+  language = reactableLang(searchPlaceholder = "Pesquisar", noData = "Sem resultados",
+    pageNext = "Seguinte", pagePrevious = "Anterior", pageInfo = "{rowStart}–{rowEnd} de {rows} linhas"))
 ```

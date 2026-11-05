@@ -1,16 +1,16 @@
 ---
-title: "Chub mackerel"
+title: "Cavala"
 subtitle: "Scomber colias"
-description: "Placeholder profile — replace with real data."
+description: "Ficha provisória — substituir por dados reais."
 ---
 
 ::: {.plain-words}
-**In plain words:** a small, fast schooling fish caught with purse seines. *(Placeholder text.)*
+**Em palavras simples:** um peixe pequeno e veloz, que vive em cardume e é capturado com redes de cerco. *(Texto provisório.)*
 :::
 
 ```{r}
 library(plotly)
-d <- subset(read.csv("../data/landings.csv"), species == "Chub mackerel")
+d <- subset(read.csv("../data/landings.csv"), species == "Cavala")
 plot_ly(d, x = ~year, y = ~tonnes, type = "scatter", mode = "lines+markers") |>
-  layout(xaxis = list(title = "Year"), yaxis = list(title = "Landings (tonnes)"))
+  layout(xaxis = list(title = "Ano"), yaxis = list(title = "Desembarques (toneladas)"))
 ```
