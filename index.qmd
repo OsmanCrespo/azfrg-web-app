@@ -1,8 +1,9 @@
 ---
-title: "O que se passa nas nossas águas?"
+title: "O que se passa no mar dos Açores?"
 page-layout: full
 toc: false
 ---
+![](images/afg_logo.png){width=120 fig-align="right"}
 
 ```{r}
 library(leaflet)

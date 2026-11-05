@@ -1,4 +1,5 @@
 ---
+image: images/Gorazes.png
 title: "Goraz"
 subtitle: "Pagellus bogaraveo"
 description: "Ficha provisória — substituir por dados reais."
