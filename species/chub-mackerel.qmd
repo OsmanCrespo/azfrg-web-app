@@ -1,7 +1,8 @@
 ---
 image: images/cavala.jpg
-title-block-banner: images/cavala.jpg
-title-block-banner-color: white
+title-block-banner: images/cavala2.jpg
+title-block-banner-color: darkblue
+title-block-banner-opacity: 0.5
 title: "Cavala"
 subtitle: "Scomber colias"
 description: "Ficha provisória — substituir por dados reais."
