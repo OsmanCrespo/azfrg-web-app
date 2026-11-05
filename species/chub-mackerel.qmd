@@ -1,0 +1,16 @@
+---
+title: "Chub mackerel"
+subtitle: "Scomber colias"
+description: "Placeholder profile — replace with real data."
+---
+
+::: {.plain-words}
+**In plain words:** a small, fast schooling fish caught with purse seines. *(Placeholder text.)*
+:::
+
+```{r}
+library(plotly)
+d <- subset(read.csv("../data/landings.csv"), species == "Chub mackerel")
+plot_ly(d, x = ~year, y = ~tonnes, type = "scatter", mode = "lines+markers") |>
+  layout(xaxis = list(title = "Year"), yaxis = list(title = "Landings (tonnes)"))
+```

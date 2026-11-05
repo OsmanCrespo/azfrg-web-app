@@ -1,0 +1,41 @@
+---
+title: "What's happening in our waters?"
+page-layout: full
+toc: false
+---
+
+```{r}
+library(leaflet)
+sites <- read.csv("data/sites.csv")
+leaflet(sites, height = 350) |>
+  addProviderTiles("Esri.OceanBasemap") |>
+  addCircleMarkers(~lon, ~lat, radius = 6, color = "#0b4f6c", label = ~site)
+```
+
+[Explore the map →](map.qmd){.btn .btn-primary}
+
+::: {.grid}
+::: {.g-col-4 .stat-box}
+<span class="num">2</span><br>species profiled
+:::
+::: {.g-col-4 .stat-box}
+<span class="num">12</span><br>years of landings data
+:::
+::: {.g-col-4 .stat-box}
+<span class="num">3</span><br>publications
+:::
+:::
+
+## Featured finding
+
+```{r}
+library(plotly)
+d <- read.csv("data/landings.csv")
+plot_ly(d, x = ~year, y = ~tonnes, color = ~species, type = "scatter",
+        mode = "lines+markers") |>
+  layout(xaxis = list(title = "Year"), yaxis = list(title = "Landings (tonnes)"))
+```
+
+::: {.plain-words}
+**In plain words:** this chart shows how much of each species was landed per year. *(Placeholder text and data.)*
+:::

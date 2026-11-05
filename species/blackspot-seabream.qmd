@@ -1,0 +1,37 @@
+---
+title: "Blackspot seabream"
+subtitle: "Pagellus bogaraveo"
+description: "Placeholder profile — replace with real data."
+---
+
+::: {.plain-words}
+**In plain words:** a reddish deep-water fish, a key target of the local hook-and-line fishery. *(Placeholder text.)*
+:::
+
+::: {.panel-tabset}
+
+## Biology
+
+```{r}
+library(plotly)
+set.seed(1)
+L <- runif(150, 20, 55)
+W <- 0.012 * L^3.05 * exp(rnorm(150, 0, 0.08))
+plot_ly(x = L, y = W, type = "scatter", mode = "markers") |>
+  layout(xaxis = list(title = "Length (cm)"), yaxis = list(title = "Weight (g)"),
+         title = "Length–weight relationship (simulated)")
+```
+
+## Fishery
+
+```{r}
+d <- subset(read.csv("../data/landings.csv"), species == "Blackspot seabream")
+plot_ly(d, x = ~year, y = ~tonnes, type = "bar") |>
+  layout(xaxis = list(title = "Year"), yaxis = list(title = "Landings (tonnes)"))
+```
+
+## Publications
+
+See the [Publications](../publications.qmd) page.
+
+:::

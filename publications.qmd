@@ -1,0 +1,20 @@
+---
+title: "Publications"
+---
+
+Only published articles and reports are available for download.
+
+```{r}
+library(reactable)
+p <- read.csv("data/publications.csv")
+reactable(
+  p, searchable = TRUE, filterable = TRUE,
+  columns = list(
+    doi = colDef(cell = function(v) htmltools::tags$a(href = paste0("https://doi.org/", v), target = "_blank", v)),
+    pdf = colDef(name = "Download", filterable = FALSE,
+                 cell = function(v) if (nzchar(v)) htmltools::tags$a(href = v, "PDF") else "")
+  )
+)
+```
+
+Put PDFs in `files/` and reference them as `files/name.pdf` in `data/publications.csv`.

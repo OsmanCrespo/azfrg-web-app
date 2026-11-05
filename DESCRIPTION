@@ -1,0 +1,10 @@
+Package: azfrgwebapp
+Title: Fisheries Research Portal
+Version: 0.0.1
+Imports:
+    knitr,
+    rmarkdown,
+    plotly,
+    leaflet,
+    reactable,
+    htmltools

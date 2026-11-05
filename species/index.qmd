@@ -1,0 +1,11 @@
+---
+title: "Species"
+listing:
+  contents: "*.qmd"
+  type: grid
+  fields: [image, title, subtitle, description]
+  sort: title
+  grid-columns: 3
+---
+
+Browse the species we study. Each page has biology, fishery data and related publications.

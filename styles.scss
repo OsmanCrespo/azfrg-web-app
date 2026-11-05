@@ -1,0 +1,20 @@
+/*-- scss:defaults --*/
+$primary: #0b4f6c;
+$secondary: #01baef;
+$body-bg: #fbfbff;
+$font-size-base: 1.05rem;
+
+/*-- scss:rules --*/
+.stat-box {
+  background: #e8f4f8;
+  border-left: 6px solid #0b4f6c;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+}
+.stat-box .num { font-size: 2rem; font-weight: 700; color: #0b4f6c; }
+.plain-words {
+  background: #fff6e0;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+}

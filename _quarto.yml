@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Fisheries Research Portal"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: map.qmd
+        text: Map Explorer
+      - href: species/index.qmd
+        text: Species
+      - href: fisheries.qmd
+        text: Fisheries Data
+      - href: publications.qmd
+        text: Publications
+      - href: about.qmd
+        text: About
+  page-footer: "Data shown are illustrative placeholders until replaced with published research data."
+
+format:
+  html:
+    theme:
+      light: [flatly, styles.scss]
+    toc: true
+    code-tools: false
+    echo: false
+    warning: false
+    message: false
+
+execute:
+  freeze: auto

@@ -1,0 +1,22 @@
+---
+title: "Fisheries Data"
+---
+
+```{r}
+library(plotly)
+library(reactable)
+d <- read.csv("data/landings.csv")
+plot_ly(d, x = ~year, y = ~tonnes, color = ~species, type = "bar") |>
+  layout(barmode = "stack", xaxis = list(title = "Year"),
+         yaxis = list(title = "Landings (tonnes)"))
+```
+
+::: {.plain-words}
+**How to read this:** each coloured block is one species; the full bar height is total landings for that year.
+:::
+
+## Table
+
+```{r}
+reactable(d, searchable = TRUE, filterable = TRUE, defaultPageSize = 10)
+```

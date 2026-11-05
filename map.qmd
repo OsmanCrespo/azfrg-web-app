@@ -1,0 +1,23 @@
+---
+title: "Map Explorer"
+page-layout: full
+---
+
+Click a point to see the site and its sampled species. Use the layer control to switch base maps.
+
+```{r}
+library(leaflet)
+sites <- read.csv("data/sites.csv")
+leaflet(sites, height = 600) |>
+  addProviderTiles("Esri.OceanBasemap", group = "Ocean") |>
+  addTiles(group = "Streets") |>
+  addCircleMarkers(~lon, ~lat, radius = ~sqrt(catch_t) * 2,
+                   color = "#0b4f6c", fillOpacity = 0.6,
+                   popup = ~paste0("<b>", site, "</b><br>Main species: ", main_species,
+                                   "<br>Catch: ", catch_t, " t")) |>
+  addLayersControl(baseGroups = c("Ocean", "Streets"))
+```
+
+::: {.callout-note}
+Next steps: year slider, species filter and protected-area layers (Shiny-free options: Observable JS or `crosstalk`).
+:::
