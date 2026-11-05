@@ -1,5 +1,0 @@
----
-title: "Sobre"
----
-
-Sobre a nossa equipa de investigação, contactos, política de dados, licença e como citar este portal. *(Por escrever.)*
