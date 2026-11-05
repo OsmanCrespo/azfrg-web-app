@@ -17,20 +17,6 @@ toc: false
 :::
 :::
 
-## Sobre a equipa {#sobre}
-
-Apresentação da nossa equipa de investigação, objetivos, contactos, política de dados, licença e como citar este portal. *(Por escrever.)*
-
-### Notícias
-
-- *(Data)* — Título da notícia. *(Por escrever.)*
-
-### Membros
-
-| Nome | Função | Contacto |
-|------|--------|----------|
-| *(Nome)* | *(Função)* | *(email)* |
-
 ## Resultado em destaque
 
 ```{r}
@@ -44,3 +30,17 @@ plot_ly(d, x = ~year, y = ~tonnes, color = ~species, type = "scatter",
 ::: {.plain-words}
 **Em palavras simples:** este gráfico mostra a quantidade de cada espécie desembarcada por ano. *(Texto e dados provisórios.)*
 :::
+
+## Sobre a equipa {#sobre}
+
+Apresentação da nossa equipa de investigação, objetivos, contactos, política de dados, licença e como citar este portal. *(Por escrever.)*
+
+### Notícias
+
+- *(Data)* — Título da notícia. *(Por escrever.)*
+
+### Membros
+
+| Nome | Função | Contacto |
+|------|--------|----------|
+| *(Nome)* | *(Função)* | *(email)* |
