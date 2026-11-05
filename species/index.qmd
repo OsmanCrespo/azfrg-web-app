@@ -3,7 +3,7 @@ title: "Espécies"
 listing:
   contents: "*.qmd"
   type: grid
-  fields: [image, title, subtitle, description]
+  fields: [image, title, subtitle]
   sort: title
   grid-columns: 3
 ---
