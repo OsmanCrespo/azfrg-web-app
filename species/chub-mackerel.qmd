@@ -1,4 +1,5 @@
 ---
+image: images/cavala.jpg
 title: "Cavala"
 subtitle: "Scomber colias"
 description: "Ficha provisória — substituir por dados reais."

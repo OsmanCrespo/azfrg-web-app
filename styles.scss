@@ -18,3 +18,29 @@ $font-size-base: 1.05rem;
   border-radius: 6px;
   padding: 0.8rem 1rem;
 }
+
+/* Espécies grid: modern rounded cards */
+.quarto-listing-container-grid .card,
+.quarto-grid-item.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(11, 79, 108, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quarto-grid-item.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(11, 79, 108, 0.22);
+}
+
+.quarto-grid-item .card-img-top {
+  aspect-ratio: 1 / 1;   /* square photos */
+  object-fit: cover;
+}
+
+.quarto-grid-item .card-title { color: #0b4f6c; font-weight: 700; }
+.quarto-grid-item .card-subtitle { font-style: italic; opacity: 0.8; }
+
+/*-- scss:navbar details --*/
+.navbar-brand img { max-height: 80px; }

@@ -5,7 +5,7 @@ project:
 lang: pt
 
 website:
-  title: "Portal de Investigação Pesqueira"
+  title: "Portal de Investigação Pesqueira nos Açores"
   navbar:
     logo: images/afg_logo.png
     left:
