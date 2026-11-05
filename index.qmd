@@ -5,16 +5,6 @@ toc: false
 ---
 ![](images/afg_logo.png){width=120 fig-align="right"}
 
-```{r}
-library(leaflet)
-sites <- read.csv("data/sites.csv")
-leaflet(sites, height = 350) |>
-  addProviderTiles("Esri.OceanBasemap") |>
-  addCircleMarkers(~lon, ~lat, radius = 6, color = "#0b4f6c", label = ~site)
-```
-
-[Explorar o mapa →](map.qmd){.btn .btn-primary}
-
 ::: {.grid}
 ::: {.g-col-4 .stat-box}
 <span class="num">2</span><br>espécies descritas
@@ -26,6 +16,20 @@ leaflet(sites, height = 350) |>
 <span class="num">3</span><br>publicações
 :::
 :::
+
+## Sobre a equipa {#sobre}
+
+Apresentação da nossa equipa de investigação, objetivos, contactos, política de dados, licença e como citar este portal. *(Por escrever.)*
+
+### Notícias
+
+- *(Data)* — Título da notícia. *(Por escrever.)*
+
+### Membros
+
+| Nome | Função | Contacto |
+|------|--------|----------|
+| *(Nome)* | *(Função)* | *(email)* |
 
 ## Resultado em destaque
 
