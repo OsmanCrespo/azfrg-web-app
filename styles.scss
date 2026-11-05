@@ -69,5 +69,7 @@ $font-size-base: 1.05rem;
 .member .role { font-style: italic; opacity: 0.8; margin-bottom: 0.4rem; }
 .member p { font-size: 0.9rem; }
 
-/*-- scss:navbar details --*/
-.navbar-brand img { max-height: 80px; }
+/* Navbar fina */
+.navbar { padding-top: 0.15rem; padding-bottom: 0.15rem; min-height: 0; }
+.navbar-brand img { max-height: 40px; }
+.navbar .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
