@@ -45,6 +45,86 @@ O objetivo é estudar as pescas nos Açores, incluindo a biologia das espécies,
 
 ### Membros
 
-| Nome | Função | Contacto |
-|------|--------|----------|
-| *(Nome)* | *(Função)* | *(email)* |
+Para adicionar uma pessoa, copie um bloco `<div class="member">` e altere a foto (`images/membros/`), o nome, a função e a descrição.
+
+#### Coordenação
+
+```{=html}
+<div class="member-row">
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de Régis Santos">
+    <h5>Prof. Doutor Régis Santos</h5>
+    <p class="role">Líder da equipa</p>
+    <p>Breve descrição (áreas de investigação, contacto). <em>(Por escrever.)</em></p>
+  </div>
+</div>
+```
+
+#### Doutorados
+
+```{=html}
+<div class="member-row">
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Investigador(a) doutorado(a)</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Investigador(a) doutorado(a)</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Investigador(a) doutorado(a)</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+</div>
+```
+
+#### Técnicos e estudantes
+
+```{=html}
+<div class="member-row">
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Técnico(a)</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Estudante de doutoramento</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Estudante de mestrado</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+</div>
+```
+
+#### Colaboradores
+
+```{=html}
+<div class="member-row">
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Colaborador(a) — (Instituição)</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+  <div class="member">
+    <img src="images/membros/placeholder.svg" alt="Foto de (Nome)">
+    <h5>(Nome)</h5>
+    <p class="role">Colaborador(a) — (Instituição)</p>
+    <p>Breve descrição. <em>(Por escrever.)</em></p>
+  </div>
+</div>
+```

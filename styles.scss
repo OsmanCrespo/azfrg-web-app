@@ -42,5 +42,32 @@ $font-size-base: 1.05rem;
 .quarto-grid-item .card-title { color: #0b4f6c; font-weight: 700; }
 .quarto-grid-item .card-subtitle { font-style: italic; opacity: 0.8; }
 
+/* Membros: linhas centradas de cartões com foto */
+.member-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.member {
+  flex: 0 1 220px;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 4px 14px rgba(11, 79, 108, 0.12);
+}
+.member img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
+}
+.member h5 { color: #0b4f6c; font-weight: 700; margin-bottom: 0.1rem; }
+.member .role { font-style: italic; opacity: 0.8; margin-bottom: 0.4rem; }
+.member p { font-size: 0.9rem; }
+
 /*-- scss:navbar details --*/
 .navbar-brand img { max-height: 80px; }
