@@ -1,6 +1,6 @@
 ---
 image: images/Gorazes.png
-title-block-banner: images/Gorazes.png
+title-block-banner: images/Gorazes2.png
 title-block-banner-color: white
 title: "Goraz"
 subtitle: "*Pagellus bogaraveo*"

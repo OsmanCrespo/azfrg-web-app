@@ -19,6 +19,8 @@ website:
         text: Dados das Pescas
       - href: publications.qmd
         text: Publicações
+      - href: projects.qmd
+        text: Projectos
   page-footer: "Os dados apresentados são exemplos provisórios, a substituir pelos dados de investigação publicados."
 
 format:

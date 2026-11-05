@@ -55,7 +55,7 @@ Para adicionar uma pessoa, copie um bloco `<div class="member">` e altere a foto
     <img src="images/membros/placeholder.svg" alt="Foto de Régis Santos">
     <h5>Prof. Doutor Régis Santos</h5>
     <p class="role">Líder da equipa</p>
-    <p>Breve descrição (áreas de investigação, contacto). <em>(Por escrever.)</em></p>
+    <p>Breve descrição (áreas de investigação, contacto).</p>
   </div>
 </div>
 ```
