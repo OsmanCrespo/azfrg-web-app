@@ -2,6 +2,8 @@
 title: "O que se passa no mar dos Açores?"
 page-layout: full
 toc: false
+resources:
+  - images/mar-ao-por-do-sol.svg
 ---
 ![](images/afg_logo2.png){width=120 fig-align="right"}
 
@@ -126,5 +128,11 @@ Para adicionar uma pessoa, copie um bloco `<div class="member">` e altere a foto
     <p class="role">Colaborador(a) — (Instituição)</p>
     <p>Breve descrição. <em>(Por escrever.)</em></p>
   </div>
+</div>
+```
+
+```{=html}
+<div class="inicio-mar" aria-hidden="true">
+  <img src="images/mar-ao-por-do-sol.svg" alt="">
 </div>
 ```
