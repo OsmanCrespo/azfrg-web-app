@@ -3,7 +3,7 @@ title: "O que se passa no mar dos Açores?"
 page-layout: full
 toc: false
 resources:
-  - images/mar-ao-por-do-sol.svg
+  - images/OC_edited.png
 ---
 ![](images/afg_logo2.png){width=120 fig-align="right"}
 
