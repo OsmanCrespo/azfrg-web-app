@@ -133,6 +133,6 @@ Para adicionar uma pessoa, copie um bloco `<div class="member">` e altere a foto
 
 ```{=html}
 <div class="inicio-mar" aria-hidden="true">
-  <img src="images/mar-ao-por-do-sol.svg" alt="">
+  <img src="images/OC_edited.png" alt="">
 </div>
 ```
