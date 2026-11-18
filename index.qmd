@@ -47,7 +47,6 @@ O objetivo é estudar as pescas nos Açores, incluindo a biologia das espécies,
 
 ### Membros
 
-Para adicionar uma pessoa, copie um bloco `<div class="member">` e altere a foto (`images/membros/`), o nome, a função e a descrição.
 
 #### Coordenação
 
