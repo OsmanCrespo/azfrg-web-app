@@ -71,14 +71,23 @@ $font-size-base: 1.05rem;
 
 .inicio-mar {
   width: 100vw;
-  margin: 3rem 0 1rem calc(50% - 50vw);
+  margin: 3rem 0 0 calc(50% - 50vw);
   overflow: hidden;
 }
 .inicio-mar img {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: clamp(180px, 30vw, 360px);
   object-fit: cover;
+}
+body:has(.inicio-mar) > footer.footer {
+  display: none;
+}
+#quarto-content.page-rows-contents:has(.inicio-mar) {
+  grid-template-rows: [content-top] minmax(max-content, 1fr) [content-bottom] 0px [page-bottom];
+}
+#quarto-content.page-rows-contents:has(.inicio-mar) main.content {
+  margin-bottom: 0;
 }
 
 /* Navbar fina */
