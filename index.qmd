@@ -3,7 +3,7 @@ title: "O que se passa no mar dos Açores?"
 page-layout: full
 toc: false
 resources:
-  - images/mar-ao-por-do-sol.svg
+  - images/OC_edited.png
 ---
 ![](images/afg_logo2.png){width=120 fig-align="right"}
 
@@ -47,7 +47,6 @@ O objetivo é estudar as pescas nos Açores, incluindo a biologia das espécies,
 
 ### Membros
 
-Para adicionar uma pessoa, copie um bloco `<div class="member">` e altere a foto (`images/membros/`), o nome, a função e a descrição.
 
 #### Coordenação
 
@@ -133,6 +132,6 @@ Para adicionar uma pessoa, copie um bloco `<div class="member">` e altere a foto
 
 ```{=html}
 <div class="inicio-mar" aria-hidden="true">
-  <img src="images/mar-ao-por-do-sol.svg" alt="">
+  <img src="images/OC_edited.png" alt="">
 </div>
 ```
