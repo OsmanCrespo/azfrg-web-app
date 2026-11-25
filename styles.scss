@@ -68,7 +68,7 @@ body:has(.home-hero) #quarto-header.headroom {
 .home-hero-content p { margin: 0; }
 .home-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin: 1.5rem 0 3rem;
 }
@@ -116,6 +116,12 @@ body:has(.home-hero) #quarto-header.headroom {
   background-image: linear-gradient(rgba(5, 35, 51, 0.78), rgba(5, 35, 51, 0.78)), var(--home-header-image);
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 800px) {
+  .home-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 500px) {
+  .home-links { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
   .team-intro { grid-template-columns: 1fr; }
