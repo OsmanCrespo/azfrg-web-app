@@ -4,46 +4,67 @@ page-layout: full
 toc: false
 resources:
   - images/OC_edited.png
+  - images/afg_logo2.png
 ---
-![](images/afg_logo2.png){width=120 fig-align="right"}
 
-::: {.grid}
-::: {.g-col-4 .stat-box}
-<span class="num">2</span><br>espécies descritas
-:::
-::: {.g-col-4 .stat-box}
-<span class="num">12</span><br>anos de dados de desembarques
-:::
-::: {.g-col-4 .stat-box}
-<span class="num">3</span><br>publicações
-:::
-:::
-
-## Resultado em destaque
-
-```{r}
-library(plotly)
-d <- read.csv("data/landings.csv")
-plot_ly(d, x = ~year, y = ~tonnes, color = ~species, type = "scatter",
-        mode = "lines+markers") |>
-  layout(xaxis = list(title = "Ano"), yaxis = list(title = "Desembarques (toneladas)"))
+```{=html}
+<div class="home-hero">
+  <img src="images/OC_edited.png" alt="">
+  <div class="home-hero-content">
+    <p>Investigação das pescas nos Açores</p>
+    <h1>Conhecer o mar, compreender as pescas</h1>
+    <p>Explore as espécies, os dados e o trabalho da nossa equipa.</p>
+  </div>
+</div>
 ```
 
-::: {.plain-words}
-**Em palavras simples:** este gráfico mostra a quantidade de cada espécie desembarcada por ano. *(Texto e dados provisórios.)*
-:::
+## Explore o portal
+
+```{=html}
+<nav class="home-links" aria-label="Explorar o portal">
+  <a class="home-link" href="map.html">
+    <span class="home-link-title">Explorador de Mapas</span>
+    <span>Explore a informação geográfica sobre as pescas.</span>
+    <span class="home-link-action">Explorar →</span>
+  </a>
+  <a class="home-link" href="species/index.html">
+    <span class="home-link-title">Espécies</span>
+    <span>Conheça as espécies estudadas e a sua biologia.</span>
+    <span class="home-link-action">Explorar →</span>
+  </a>
+  <a class="home-link" href="fisheries.html">
+    <span class="home-link-title">Dados das Pescas</span>
+    <span>Consulte dados e gráficos sobre as pescas.</span>
+    <span class="home-link-action">Explorar →</span>
+  </a>
+  <a class="home-link" href="publications.html">
+    <span class="home-link-title">Publicações</span>
+    <span>Encontre artigos e relatórios publicados.</span>
+    <span class="home-link-action">Explorar →</span>
+  </a>
+  <a class="home-link" href="projects.html">
+    <span class="home-link-title">Projectos</span>
+    <span>Descubra os projectos da equipa.</span>
+    <span class="home-link-action">Explorar →</span>
+  </a>
+</nav>
+```
 
 ## Sobre a equipa {#sobre}
 
-A equipa de investigação das pescas nos Açores é um grupo baseado na Universidade dos Açores, que trabalha em colaboração com o Instituto OKEANOS...
-Liderada pelo Prof. Doutor Régis Santos, a equipa inclui investigadores, estudantes e técnicos que se dedicam ao estudo das pescas e da biologia marinha voltada para os recursos pesqueiros na região.
-
-### Objetivos
-O objetivo é estudar as pescas nos Açores, incluindo a biologia das espécies, os impactos da pesca e o estado dos estoques dos principais recursos marinhos explorados na região.
-
-### Notícias
-
-- *(Data)* — Título da notícia. *(Por escrever.)*
+```{=html}
+<div class="team-intro">
+  <img class="team-intro-logo" src="images/afg_logo2.png" alt="Logótipo do AzFRG">
+  <div>
+    <h3>Azores Fisheries Research Group — AzFRG</h3>
+    <p class="team-intro-translation">Grupo de Investigação das Pescas dos Açores</p>
+    <p>Universidade dos Açores · Instituto OKEANOS</p>
+    <p>Morada: <em>a preencher</em></p>
+    <p>O AzFRG é uma equipa de investigação baseada na Universidade dos Açores, que trabalha em colaboração com o Instituto OKEANOS. Liderada pelo Prof. Doutor Régis Santos, a equipa reúne investigadores, estudantes e técnicos dedicados ao estudo das pescas e da biologia dos recursos marinhos da região.</p>
+    <p>O seu trabalho aborda a biologia das espécies, os impactos da pesca e o estado dos recursos marinhos explorados nos Açores.</p>
+  </div>
+</div>
+```
 
 ### Membros
 
@@ -130,8 +151,24 @@ O objetivo é estudar as pescas nos Açores, incluindo a biologia das espécies,
 </div>
 ```
 
+### Notícias
+
+- *(Data)* — Título da notícia. *(Por escrever.)*
+
 ```{=html}
 <div class="inicio-mar" aria-hidden="true">
   <img src="images/OC_edited.png" alt="">
 </div>
+<script>
+(() => {
+  const navbar = document.querySelector("#quarto-header .navbar");
+  if (!navbar) return;
+
+  const image = new URL("images/OC_edited.png", document.baseURI).href;
+  navbar.style.setProperty("--home-header-image", `url("${image}")`);
+  const updateHeader = () => navbar.classList.toggle("home-navbar-top", window.scrollY < 40);
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+})();
+</script>
 ```

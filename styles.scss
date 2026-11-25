@@ -19,6 +19,107 @@ $font-size-base: 1.05rem;
   padding: 0.8rem 1rem;
 }
 
+/* Página inicial */
+body:has(.home-hero) #title-block-header {
+  display: none;
+}
+body:has(.home-hero) #quarto-content > main.content {
+  padding-top: 0;
+}
+body:has(.home-hero) #quarto-header.headroom {
+  transform: none;
+}
+.home-hero {
+  position: relative;
+  width: 100vw;
+  height: clamp(260px, 36vw, 460px);
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  color: #fff;
+  background: #0b4f6c;
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(5, 35, 51, 0.85), rgba(5, 35, 51, 0.24));
+}
+.home-hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-hero-content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: clamp(1.5rem, 8vw, 8rem);
+  right: 1.5rem;
+  max-width: 42rem;
+  transform: translateY(-50%);
+}
+.home-hero-content h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.1;
+  margin: 0.4rem 0 1rem;
+}
+.home-hero-content p { margin: 0; }
+.home-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 3rem;
+}
+.home-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.35rem;
+  color: #263d4a;
+  text-decoration: none;
+  background: #edf5f6;
+  border: 1px solid #d5e7e8;
+  border-radius: 16px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.home-link:hover, .home-link:focus-visible {
+  color: #0b4f6c;
+  box-shadow: 0 8px 20px rgba(11, 79, 108, 0.18);
+  transform: translateY(-3px);
+}
+.home-link:focus-visible { outline: 3px solid #0b4f6c; outline-offset: 3px; }
+.home-link-title { color: #0b4f6c; font-size: 1.1rem; font-weight: 700; }
+.home-link-action { margin-top: auto; color: #0b4f6c; font-weight: 700; }
+.team-intro {
+  display: grid;
+  grid-template-columns: minmax(150px, 250px) minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem 0 3rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background: #f0f7f7;
+  border-radius: 20px;
+}
+.team-intro-logo { display: block; width: 100%; max-height: 220px; object-fit: contain; }
+.team-intro h3 { margin-top: 0; color: #0b4f6c; }
+.team-intro-translation { font-size: 0.95rem; color: #48606b; }
+.team-intro p:last-child { margin-bottom: 0; }
+.navbar.home-navbar-top {
+  background-image: linear-gradient(rgba(5, 35, 51, 0.78), rgba(5, 35, 51, 0.78)), var(--home-header-image);
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  .team-intro { grid-template-columns: 1fr; }
+  .team-intro-logo { width: min(100%, 180px); margin: 0 auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-link { transition: none; }
+  .home-link:hover, .home-link:focus-visible { transform: none; }
+}
+
 /* Espécies grid: modern rounded cards */
 .quarto-listing-container-grid .card,
 .quarto-grid-item.card {
