@@ -1,5 +1,5 @@
 ---
-title: "O que se passa no mar dos Açores?"
+title: "Portal de investigação das pescas nos Açores"
 page-layout: full
 toc: false
 resources:
@@ -13,7 +13,7 @@ resources:
   <div class="home-hero-content">
     <p>Investigação das pescas nos Açores</p>
     <h1>Conhecer o mar, compreender as pescas</h1>
-    <p>Explore as espécies, os dados e o trabalho da nossa equipa.</p>
+    <p>Explore as espécies, os dados e os trabalhos da nossa equipa.</p>
   </div>
 </div>
 ```
@@ -23,30 +23,28 @@ resources:
 ```{=html}
 <nav class="home-links" aria-label="Explorar o portal">
   <a class="home-link" href="map.html">
+    <img src="images/cards/maps2.png" alt="Explorador de Mapas">
     <span class="home-link-title">Explorador de Mapas</span>
-    <span>Explore a informação geográfica sobre as pescas.</span>
-    <span class="home-link-action">Explorar →</span>
+    <span>Explore a informação espacial sobre as pescas.</span>
   </a>
   <a class="home-link" href="species/index.html">
+    <img src="images/cards/species.png" alt="">
     <span class="home-link-title">Espécies</span>
     <span>Conheça as espécies estudadas e a sua biologia.</span>
-    <span class="home-link-action">Explorar →</span>
   </a>
   <a class="home-link" href="fisheries.html">
+    <img src="images/cards/stat.png" alt="">
     <span class="home-link-title">Dados das Pescas</span>
     <span>Consulte dados e gráficos sobre as pescas.</span>
-    <span class="home-link-action">Explorar →</span>
-  </a>
+    </a>
   <a class="home-link" href="publications.html">
     <span class="home-link-title">Publicações</span>
     <span>Encontre artigos e relatórios publicados.</span>
-    <span class="home-link-action">Explorar →</span>
-  </a>
+    </a>
   <a class="home-link" href="projects.html">
     <span class="home-link-title">Projectos</span>
     <span>Descubra os projectos da equipa.</span>
-    <span class="home-link-action">Explorar →</span>
-  </a>
+    </a>
 </nav>
 ```
 
